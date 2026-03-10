@@ -1,0 +1,17 @@
+{
+  "user_id": "default",
+  "assistant_name": "OI",
+  "humor_mode": "dry",
+  "proactive_level": "medium",
+  "preferred_model": "llama3.2",
+  "extraction_model": "llama3.2",
+  "notification_style": "subtle",
+  "steering_enabled": true,
+  "sycophancy_threshold": 0.65,
+  "aggression_threshold": 0.65,
+  "persona_snapshot_every_n_sessions": 5,
+  "max_memories_in_prompt": 7,
+  "gist_age_days": 30,
+  "gist_count_limit": 50,
+  "notes": "Edit this file to tune assistant behavior. user_id must stay consistent across sessions."
+}
