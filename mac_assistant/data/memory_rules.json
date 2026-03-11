@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "extraction": {
+    "min_message_length": 20,
+    "min_importance_to_store": 0.15,
+    "max_candidates_per_turn": 5,
+    "max_existing_memories_in_prompt": 8,
+    "extract_from_user_messages_only": true
+  },
+  "do_not_store": [
+    "Temporary task context (what user is asking about right now)",
+    "Pure questions with no personal disclosure",
+    "Sarcasm and non-literal statements",
+    "Filler and social pleasantries (hi, thanks, ok)",
+    "Assistant responses and summaries",
+    "Facts about other people (unless revealing user values)",
+    "Requests for help (store the person, not the task)"
+  ],
+  "always_store": [
+    "Dietary restrictions and health preferences",
+    "Location and time zone",
+    "Financial stress signals",
+    "Long-term goals mentioned more than once",
+    "Explicit identity statements",
+    "Family and relationship structure"
+  ],
+  "require_confirmation_before_storing": [
+    "Medical conditions",
+    "Legal situations",
+    "Relationship status changes",
+    "Sensitive personal disclosures"
+  ],
+  "temporal_consistency": {
+    "recency_wins_on_contradiction": true,
+    "mark_obsolete_not_delete": true,
+    "archive_obsolete_after_days": 90
+  },
+  "persona_steering": {
+    "warn_threshold": 0.65,
+    "steer_threshold": 0.80,
+    "never_steer": ["humor_mode", "user_identity", "declared_preferences"]
+  }
+}
