@@ -256,8 +256,8 @@ class AssistantProfile(BaseModel):
     assistant_name: str = "OI"
     humor_mode: str = "dry"
     proactive_level: str = "medium"
-    preferred_model: str = "llama3.2"
-    extraction_model: str = "llama3.2"
+    preferred_model: str = "gpt-oss:20b"
+    extraction_model: str = "qwen3:8b"
     notification_style: str = "subtle"
     memory_rules_version: str = "1.0"
     steering_enabled: bool = True

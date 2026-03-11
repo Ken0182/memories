@@ -13,7 +13,7 @@ from mac_assistant.app.retrieval import search_memories_by_text, top_for_prompt
 from mac_assistant.app.schema import DB_PATH, get_connection, init_db
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-DEFAULT_MODEL = "qwen3:8b"
+DEFAULT_MODEL = "gpt-oss:20b"
 PROFILE_PATH = Path(__file__).resolve().parent.parent / "config" / "assistant_profile.json"
 
 
